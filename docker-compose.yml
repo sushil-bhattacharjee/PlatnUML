@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  plantuml:
+    image: plantuml/plantuml-server:tomcat
+    container_name: plantuml_server
+    ports:
+      - "10.1.10.98:9180:8080"  # Bind to IP 10.1.10.98 and map port 9180 to container's port 8080
+    restart: always   # Automatically restart the container if it stops
+    volumes:
+      - ./plantuml-data:/data  # Optional: Mount a local directory for persistence (adjust as needed)
+

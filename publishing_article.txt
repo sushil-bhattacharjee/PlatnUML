@@ -1,0 +1,47 @@
+@startuml
+actor Writer
+participant CMS
+actor Reviewer
+participant Website
+
+
+[o-> Writer: Get content topic
+Activate Writer
+Writer -> Writer: Research content
+Writer -> Writer: Create draft
+Writer -> CMS: Submit draft
+
+Activate CMS
+CMS -> Reviewer: Send draft
+Activate Reviewer
+Reviewer -> Reviewer: Review draft
+alt "Draft !=OK"
+  Reviewer --> CMS: Provide feedback
+  Deactivate Reviewer
+  CMS --> Writer:Send feedback
+  Deactivate CMS
+  Activate Writer
+  Writer -> Writer: Implement feedback
+
+  Writer -> CMS: Submit draft
+  Deactivate Writer
+  Activate CMS
+  CMS -> Reviewer: Send draft
+  Activate Reviewer
+  Reviewer -> Reviewer: Review draft
+else "Draft =OK"
+  Reviewer -->CMS: Approve draft
+  Deactivate Reviewer
+  CMS --> Writer: Send approval
+  Deactivate CMS
+end
+Writer -\ CMS: Publish article
+Activate CMS
+CMS -> Website: Publish article
+Activate Website
+Website -->CMS: Confirm
+Deactivate Website
+Deactivate CMS
+Website ->o] : Notify subscribers
+
+@enduml
