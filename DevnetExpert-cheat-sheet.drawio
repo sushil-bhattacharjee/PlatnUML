@@ -1791,7 +1791,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="pyATS" id="ewrhomupuJhK_6bu1PTn">
-    <mxGraphModel dx="1476" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2645" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="x4MAKRT6vdULmX1zrvzc-0" />
         <mxCell id="x4MAKRT6vdULmX1zrvzc-1" parent="x4MAKRT6vdULmX1zrvzc-0" />
@@ -2022,6 +2022,18 @@
         <mxCell id="hYqt0MfVEpecL-l0QM4y-1" edge="1" parent="x4MAKRT6vdULmX1zrvzc-1" source="hYqt0MfVEpecL-l0QM4y-0" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="211" y="712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;p&gt;@aetest.test&lt;/p&gt;def my_test(self, steps):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with steps.start(&quot;VLAN Validation&quot;, continue_=True) as step:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with step.start(&quot;Check attributes&quot;, continue_=True) as substep:&lt;br&gt;            &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with substep.start(&quot;Check MAC&quot;):&lt;br&gt;                &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;pass&lt;br&gt;            &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with substep.start(&quot;Check description&quot;):&lt;br&gt;                &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;pass" link="@aetest.test&#xa;def my_test(self, steps):&#xa;    &#xa;    with steps.start(&quot;VLAN Validation&quot;) as step:&#xa;        &#xa;        with step.start(&quot;Check attributes&quot;) as substep:&#xa;            &#xa;            with substep.start(&quot;Check MAC&quot;):&#xa;                pass&#xa;            &#xa;            with substep.start(&quot;Check description&quot;):&#xa;                pass" id="1AlTAcRx2wTgpcUOpRAi-0">
+          <mxCell parent="x4MAKRT6vdULmX1zrvzc-1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="153" width="410" x="-30" y="810" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="1AlTAcRx2wTgpcUOpRAi-1" edge="1" parent="x4MAKRT6vdULmX1zrvzc-1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <Array as="points" />
+            <mxPoint x="470" y="690" as="sourcePoint" />
+            <mxPoint x="550" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
