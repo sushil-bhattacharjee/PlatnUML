@@ -1908,7 +1908,7 @@
           <mxGeometry height="50" width="122" x="498.5" y="200" as="geometry" />
         </mxCell>
         <mxCell id="5Li7dJ7Wyzy57ZlGv3h--7" parent="x4MAKRT6vdULmX1zrvzc-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="job.yaml" vertex="1">
-          <mxGeometry height="30" width="220.5" x="400" y="690" as="geometry" />
+          <mxGeometry height="30" width="350" x="400" y="690" as="geometry" />
         </mxCell>
         <mxCell id="5Li7dJ7Wyzy57ZlGv3h--8" parent="x4MAKRT6vdULmX1zrvzc-1" style="whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=5;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Lucida Console;fontColor=#333333;" value="&lt;p&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;from pyats.easypy import run&lt;br&gt;from genie.testbed import load&lt;br&gt;import argparse&lt;br&gt;parser = argparse.ArgumentParser(description=&#39;Network validation job&#39;)&lt;br&gt;parser.add_argument(&#39;--run-task&#39;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; dest=&#39;run_task&#39;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; default=&#39;all&#39;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; help=&#39;Which task to run: interface_check, soth_vlan_test, all&#39;)&lt;br&gt;def main(runtime):&lt;br&gt;&amp;nbsp; &amp;nbsp; custom_args = parser.parse_known_args()[0]&lt;br&gt;&amp;nbsp; &amp;nbsp; run(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; testscript=&#39;p1-interface-checker.py&#39;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; taskid=&#39;interface_check&#39;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; testbed=load(&#39;p1-routers.yml&#39;),&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; runtime=runtime&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; )&lt;/font&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="280" width="350" x="400" y="720" as="geometry" />
@@ -2024,17 +2024,18 @@
             <mxPoint x="211" y="712" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="&lt;p&gt;@aetest.test&lt;/p&gt;def my_test(self, steps):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with steps.start(&quot;VLAN Validation&quot;, continue_=True) as step:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with step.start(&quot;Check attributes&quot;, continue_=True) as substep:&lt;br&gt;            &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with substep.start(&quot;Check MAC&quot;):&lt;br&gt;                &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;pass&lt;br&gt;            &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;with substep.start(&quot;Check description&quot;):&lt;br&gt;                &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;pass" link="@aetest.test&#xa;def my_test(self, steps):&#xa;    &#xa;    with steps.start(&quot;VLAN Validation&quot;) as step:&#xa;        &#xa;        with step.start(&quot;Check attributes&quot;) as substep:&#xa;            &#xa;            with substep.start(&quot;Check MAC&quot;):&#xa;                pass&#xa;            &#xa;            with substep.start(&quot;Check description&quot;):&#xa;                pass" id="1AlTAcRx2wTgpcUOpRAi-0">
-          <mxCell parent="x4MAKRT6vdULmX1zrvzc-1" style="text;whiteSpace=wrap;html=1;" vertex="1">
-            <mxGeometry height="153" width="410" x="-30" y="810" as="geometry" />
-          </mxCell>
-        </UserObject>
         <mxCell id="1AlTAcRx2wTgpcUOpRAi-1" edge="1" parent="x4MAKRT6vdULmX1zrvzc-1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
           <mxGeometry relative="1" width="80" as="geometry">
             <Array as="points" />
             <mxPoint x="470" y="690" as="sourcePoint" />
             <mxPoint x="550" y="690" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="1AlTAcRx2wTgpcUOpRAi-2" parent="x4MAKRT6vdULmX1zrvzc-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="substep" vertex="1">
+          <mxGeometry height="30" width="440.25" x="-40.25" y="797" as="geometry" />
+        </mxCell>
+        <mxCell id="1AlTAcRx2wTgpcUOpRAi-3" parent="x4MAKRT6vdULmX1zrvzc-1" style="whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=5;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Lucida Console;fontColor=#333333;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;@aetest.test&lt;br&gt;def my_test(self, steps):&lt;br&gt;&amp;nbsp; &amp;nbsp; with steps.start(&quot;VLAN Validation&quot;, continue_=True) as step:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; with step.start(&quot;Check attributes&quot;, continue_=True) as substep:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; with substep.start(&quot;Check MAC&quot;):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pass&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; with substep.start(&quot;Check description&quot;):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pass&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="440" x="-40" y="827" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
